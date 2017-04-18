@@ -50,7 +50,14 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.3.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Composition.Registration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -170,12 +177,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PatientRegistrationsController.cs" />
+    <Compile Include="Controllers\PatientRegistrationssController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\HmsContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PatientRegistration.cs" />
+    <Compile Include="Models\PatientRegistrations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -234,6 +246,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PatientRegistrations\Create.cshtml" />
+    <Content Include="Views\PatientRegistrations\Delete.cshtml" />
+    <Content Include="Views\PatientRegistrations\Details.cshtml" />
+    <Content Include="Views\PatientRegistrations\Edit.cshtml" />
+    <Content Include="Views\PatientRegistrations\Index.cshtml" />
+    <Content Include="Views\PatientRegistrationss\Create.cshtml" />
+    <Content Include="Views\PatientRegistrationss\Delete.cshtml" />
+    <Content Include="Views\PatientRegistrationss\Details.cshtml" />
+    <Content Include="Views\PatientRegistrationss\Edit.cshtml" />
+    <Content Include="Views\PatientRegistrationss\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
