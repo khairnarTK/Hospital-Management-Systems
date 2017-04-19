@@ -1,0 +1,123 @@
+﻿@model IEnumerable<HMS.Web.Models.PatientSurgeryReservation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Patient_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OT_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Patient_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Assign_Doctor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Symtoms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Risk_Factor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surgery_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guardians_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guardians_Relation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surgery_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Start_Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ot_Total_hr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.End_Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OT_Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Deposit_Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balance)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OT_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Assign_Doctor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Symtoms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Risk_Factor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surgery_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guardians_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guardians_Relation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surgery_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Start_Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ot_Total_hr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.End_Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OT_Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deposit_Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balance)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

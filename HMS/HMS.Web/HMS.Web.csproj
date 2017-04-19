@@ -170,12 +170,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PatientRegistrationsController.cs" />
+    <Compile Include="Controllers\PatientSurgeryReservationsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\HmsContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PatientRegistrations.cs" />
+    <Compile Include="Models\PatientSurgeryReservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -234,6 +239,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PatientRegistrations\Create.cshtml" />
+    <Content Include="Views\PatientRegistrations\Delete.cshtml" />
+    <Content Include="Views\PatientRegistrations\Details.cshtml" />
+    <Content Include="Views\PatientRegistrations\Edit.cshtml" />
+    <Content Include="Views\PatientRegistrations\Index.cshtml" />
+    <Content Include="Views\PatientSurgeryReservations\Create.cshtml" />
+    <Content Include="Views\PatientSurgeryReservations\Delete.cshtml" />
+    <Content Include="Views\PatientSurgeryReservations\Details.cshtml" />
+    <Content Include="Views\PatientSurgeryReservations\Edit.cshtml" />
+    <Content Include="Views\PatientSurgeryReservations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

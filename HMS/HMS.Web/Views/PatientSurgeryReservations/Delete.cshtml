@@ -1,0 +1,152 @@
+﻿@model HMS.Web.Models.PatientSurgeryReservation
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PatientSurgeryReservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OT_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assign_Doctor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assign_Doctor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symtoms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symtoms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Risk_Factor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Risk_Factor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surgery_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surgery_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guardians_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guardians_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guardians_Relation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guardians_Relation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surgery_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surgery_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Start_Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start_Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ot_Total_hr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ot_Total_hr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End_Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End_Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OT_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OT_Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deposit_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deposit_Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
