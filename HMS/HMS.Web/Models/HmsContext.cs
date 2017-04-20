@@ -10,5 +10,6 @@ namespace HMS.Web.Models
     {
         public DbSet<PatientRegistrations> PatientRegistrationes { get; set; }
         public DbSet<PatientSurgeryReservation> PatientSurgeryReservations { get; set;}
+        public DbSet<OpeartionTheatre> OpeartionTheatres { get; set;}
     }
 }
