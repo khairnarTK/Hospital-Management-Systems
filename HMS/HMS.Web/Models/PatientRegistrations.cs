@@ -15,7 +15,7 @@ namespace HMS.Web.Models
 
         public string City { get; set; }
         public string Address { get; set; }
-        public string Date_Of_Birth { get; set; }
+        public DateTime Date_Of_Birth { get; set; }
         public int Age { get; set; }
         public string Gender { get; set; }
         public string Maritial_Status { get; set;}
@@ -24,7 +24,7 @@ namespace HMS.Web.Models
          public string MobileNo { get; set; }
         public string EmailAdd { get; set; }
         public string Disease { get; set; }
-        public string  Date_Of_Join { get; set; }
+        public DateTime  Date_Of_Join { get; set; }
         public string Department { get; set; }
         public string Ward_Name { get; set; }
         public int Bed_No { get; set; }
