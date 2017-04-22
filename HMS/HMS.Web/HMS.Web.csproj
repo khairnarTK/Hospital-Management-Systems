@@ -169,7 +169,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ManageDoctorsController.cs" />
     <Compile Include="Controllers\ManageDoctorsDepartmentsController.cs" />
+    <Compile Include="Controllers\ManagePatientsController.cs" />
+    <Compile Include="Controllers\ManagePrescriptionsController.cs" />
     <Compile Include="Controllers\ManageReceptionsController.cs" />
+    <Compile Include="Controllers\ManageVisitorPassesController.cs" />
     <Compile Include="Controllers\OpeartionTheatresController.cs" />
     <Compile Include="Controllers\PatientRegistrationsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -184,8 +187,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageDoctors.cs" />
     <Compile Include="Models\ManageDoctorsDepartment.cs" />
+    <Compile Include="Models\ManagePatient.cs" />
+    <Compile Include="Models\ManagePrescription.cs" />
     <Compile Include="Models\ManageReception.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ManageVisitorPass.cs" />
     <Compile Include="Models\OpeartionTheatre.cs" />
     <Compile Include="Models\PatientRegistrations.cs" />
     <Compile Include="Models\PatientSurgeryReservation.cs" />
@@ -288,6 +294,21 @@
     <Content Include="Views\ManageDoctorsDepartments\Details.cshtml" />
     <Content Include="Views\ManageDoctorsDepartments\Edit.cshtml" />
     <Content Include="Views\ManageDoctorsDepartments\Index.cshtml" />
+    <Content Include="Views\ManagePatients\Create.cshtml" />
+    <Content Include="Views\ManagePatients\Delete.cshtml" />
+    <Content Include="Views\ManagePatients\Details.cshtml" />
+    <Content Include="Views\ManagePatients\Edit.cshtml" />
+    <Content Include="Views\ManagePatients\Index.cshtml" />
+    <Content Include="Views\ManagePrescriptions\Create.cshtml" />
+    <Content Include="Views\ManagePrescriptions\Delete.cshtml" />
+    <Content Include="Views\ManagePrescriptions\Details.cshtml" />
+    <Content Include="Views\ManagePrescriptions\Edit.cshtml" />
+    <Content Include="Views\ManagePrescriptions\Index.cshtml" />
+    <Content Include="Views\ManageVisitorPasses\Create.cshtml" />
+    <Content Include="Views\ManageVisitorPasses\Delete.cshtml" />
+    <Content Include="Views\ManageVisitorPasses\Details.cshtml" />
+    <Content Include="Views\ManageVisitorPasses\Edit.cshtml" />
+    <Content Include="Views\ManageVisitorPasses\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
