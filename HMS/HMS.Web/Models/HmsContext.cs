@@ -17,5 +17,15 @@ namespace HMS.Web.Models
         public DbSet<ManagePatient> ManagePatients { get; set; }
         public DbSet<ManagePrescription> ManagePrescriptions { get; set; }
         public DbSet<ManageVisitorPass> ManageVisitorPass { get; set;}
+        public DbSet<ManageReport> ManageReports { get; set;}
+        public DbSet<ManageNurse> ManageNurse { get; set;}
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ManageNurse>().MapToStoredProcedures();
+            base.OnModelCreating(modelBuilder);
+        }
+
+        public System.Data.Entity.DbSet<HMS.Web.ManageNurseRepository> ManageNurseRepositories { get; set; }
     }
 }

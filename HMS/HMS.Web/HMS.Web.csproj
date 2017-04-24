@@ -169,9 +169,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ManageDoctorsController.cs" />
     <Compile Include="Controllers\ManageDoctorsDepartmentsController.cs" />
+    <Compile Include="Controllers\ManageNurseRepositoriesController.cs" />
     <Compile Include="Controllers\ManagePatientsController.cs" />
     <Compile Include="Controllers\ManagePrescriptionsController.cs" />
     <Compile Include="Controllers\ManageReceptionsController.cs" />
+    <Compile Include="Controllers\ManageReportsController.cs" />
     <Compile Include="Controllers\ManageVisitorPassesController.cs" />
     <Compile Include="Controllers\OpeartionTheatresController.cs" />
     <Compile Include="Controllers\PatientRegistrationsController.cs" />
@@ -182,20 +184,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ManageNurseRepository.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\HmsContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageDoctors.cs" />
     <Compile Include="Models\ManageDoctorsDepartment.cs" />
+    <Compile Include="Models\ManageNurse.cs" />
     <Compile Include="Models\ManagePatient.cs" />
     <Compile Include="Models\ManagePrescription.cs" />
     <Compile Include="Models\ManageReception.cs" />
+    <Compile Include="Models\ManageReport.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ManageVisitorPass.cs" />
     <Compile Include="Models\OpeartionTheatre.cs" />
     <Compile Include="Models\PatientRegistrations.cs" />
     <Compile Include="Models\PatientSurgeryReservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -309,10 +316,21 @@
     <Content Include="Views\ManageVisitorPasses\Details.cshtml" />
     <Content Include="Views\ManageVisitorPasses\Edit.cshtml" />
     <Content Include="Views\ManageVisitorPasses\Index.cshtml" />
+    <Content Include="Views\ManageReports\Create.cshtml" />
+    <Content Include="Views\ManageReports\Delete.cshtml" />
+    <Content Include="Views\ManageReports\Details.cshtml" />
+    <Content Include="Views\ManageReports\Edit.cshtml" />
+    <Content Include="Views\ManageReports\Index.cshtml" />
+    <Content Include="Views\ManageNurseRepositories\Create.cshtml" />
+    <Content Include="Views\ManageNurseRepositories\Delete.cshtml" />
+    <Content Include="Views\ManageNurseRepositories\Details.cshtml" />
+    <Content Include="Views\ManageNurseRepositories\Edit.cshtml" />
+    <Content Include="Views\ManageNurseRepositories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="fonts\" />
+    <Folder Include="Repository\Manage Report\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
